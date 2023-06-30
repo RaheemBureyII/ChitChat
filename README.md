@@ -1,24 +1,14 @@
-# Paypal ui clone
-
-The Flutter-based PayPal UI clone offers a seamless user experience with features like sending and receiving money, transaction history, and secure account management, all presented in a clean and modern interface.
-
-## Login Screen
-
-<img width="327" alt="image" src="https://user-images.githubusercontent.com/94723743/236694425-94f8e762-34cf-4650-9447-9f03b5a8549f.png">
+# ChitChat
 
 
-## Dashboard
-
-<img width="327" alt="image" src="https://user-images.githubusercontent.com/94723743/236694434-f0ec1931-5387-4deb-a455-04e7df33825a.png">
+The chat app is a real-time communication platform built with Node.js, HTML, CSS, and JavaScript, utilizing Socket.io for seamless bi-directional data flow between the server and clients. It enables users to engage in instant messaging, fostering interactive and dynamic conversations in a responsive and intuitive interface.
 
 
-## Wallet Screen
+<img width="1000" alt="image" src="https://github.com/RaheemBureyII/ChitChat/assets/94723743/1052be79-63bd-45b7-a76b-f41ac84e88cd">
+<img width="1000" alt="image" src="https://github.com/RaheemBureyII/ChitChat/assets/94723743/d09a771d-7e25-4635-a65b-dd28ba91913c">
 
-<img width="327" alt="image" src="https://user-images.githubusercontent.com/94723743/236694452-2dec5789-ff1b-4ebe-8f19-e75583a7a7f2.png">
 
-## Recent Activity
 
-<img width="327" alt="image" src="https://user-images.githubusercontent.com/94723743/236694294-b481379e-b9d6-4cb1-a11f-aba7e39e8c09.png">
 
 
 

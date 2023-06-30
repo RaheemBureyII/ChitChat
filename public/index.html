@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://logopond.com/logos/d214b57609013e1397567df7f08d8115.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>ChitChat</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="accusers">
+            <div class="account">
+                <img onclick="myFunction()" class="profimg pulse" 
+                    src="https://helpx.adobe.com/content/dam/help/en/illustrator/how-to/character-design/jcr_content/main-pars/image/character-design-intro_900x506.jpg"
+                    alt="" width="190px" height="150px">
+                    <div class="hover_bkgr_fricc">
+                        <span class="helper"></span>
+                        <div>
+                            <div class="popupCloseButton" onclick="myFunction()">&times;</div>
+                            <p>Choose an Image</p>
+                            <div class="grid">
+                       
+                                <div class="grid-item"><img class="image"
+                                        src="https://mir-s3-cdn-cf.behance.net/projects/404/1694e185911989.Y3JvcCw5MDAsNzAzLDAsOTg.jpg"></div>
+                                <div class="grid-item"><img class="image"
+                                        src="https://mir-s3-cdn-cf.behance.net/projects/404/0fb7b689061443.Y3JvcCw5MDAsNzAzLDAsOTg.jpg"></div>
+                                <div class="grid-item"><img class="image"
+                                        src="https://helpx.adobe.com/content/dam/help/en/illustrator/how-to/character-design/jcr_content/main-pars/image/character-design-intro_900x506.jpg"></div>
+                                <div class="grid-item"><img class="image"
+                                        src="https://mir-s3-cdn-cf.behance.net/projects/404/c3d459116479043.Y3JvcCwxNTM0LDEyMDAsMzQsMA.jpg"></div>
+                                <div class="grid-item"><img class="image"
+                                        src="https://mir-s3-cdn-cf.behance.net/projects/404/1aa2e2115787465.Y3JvcCwxMjAwLDkzOCwwLDEzMA.jpg"></div>
+                                <div class="grid-item"><img class="image"
+                                        src="https://mir-s3-cdn-cf.behance.net/projects/404/fcf96f115100471.Y3JvcCwxMjAwLDkzOCwwLDEzMA.jpg"></div>
+                                        <div class="grid-item"><img class="image"
+                                            src="https://mir-s3-cdn-cf.behance.net/projects/404/ee81f2114573447.Y3JvcCwxNTM0LDEyMDAsMzQsMA.jpg"></div>
+                                    <div class="grid-item"><img class="image"
+                                            src="https://mir-s3-cdn-cf.behance.net/projects/404/f47ba8114102325.Y3JvcCw4MDgsNjMyLDAsMA.jpg"></div>
+                                    <div class="grid-item"><img class="image"
+                                            src="https://mir-s3-cdn-cf.behance.net/projects/404/647a1291811517.Y3JvcCw5MDAsNzAzLDAsOTg.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="accinfo">
+                    <p id="usernameerror" class="">Username already exists!&nbsp;</p>
+                    <div class="namesubmit">
+                        <input type="text" maxlength="10" name="name" id="name" placeholder="Enter name here">
+                        <img src="https://cdn-icons-png.flaticon.com/128/7191/7191998.png" onclick="namechange()" width="30px" class="submit" alt="send">
+                    </div>
+                    
+                    <div class="keys">
+                        <!-- <p class="pubkey">Public Key: </p>
+                        <p class="privkey">Private Key: </p> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="users">
+                <div class="userheading"> Users</div>
+                <div class="useritemlist">
+                   
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="chat nochat">
+            <div>
+                <p style="font-size: 40px;color: grey;opacity: 0.4;">No Active chats</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/6598/6598519.png" style="opacity: 0.4;" alt="empty" height="300px">
+            </div>
+           
+
+        </div>
+
+
+    </div>
+    <script>
+        // When the user clicks on div, open the popup
+       
+        
+    </script>
+   <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" ></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

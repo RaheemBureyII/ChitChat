@@ -1,0 +1,413 @@
+html{
+    background-color: #E8F9FD;
+    font-family: 'Chilanka'
+}
+body{
+  margin: 0;
+}
+.main{
+  
+    width: 100%;
+    height: 90vh;
+}
+.accusers{
+  height: 100%;
+  width: 30%;
+  float: left;
+  
+}
+.account{
+    height: 30%;
+    width: 100%;
+    font-weight: bold;
+    background-color: #79DAE8;
+    
+}
+#name{
+  width: 160px;
+  height: 25px;
+  font-size: 14;
+}
+input{
+  font-family: 'Chilanka';
+}
+.users{
+    height: 73%;
+    width: 100%;
+}
+
+.chat{
+  float:left;
+    height: 100%;
+    width: 70%;
+    
+}
+.nochat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.profimg{
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #2155CD;
+}
+.profimg:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
+  box-shadow: 0 0 25px #2155CD;;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1)}
+  100% { transform: scale(1); }
+  }
+
+
+.accinfo{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    float: right;
+}
+.userheading{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+    height: 5%;
+    background-color:#0AA1DD ;
+    font-weight: bold;
+    width: 100% - 20px;
+}
+.useritemlist{
+  padding-top: 10px;
+    height:100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #79DAE8;
+  
+}
+.useritem{
+  border-radius: 20px;
+    width: 93%;
+    height: 5%;
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-top: 2px;
+    background-color:#0AA1DD ;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+.useritem:hover{
+  transform: scale(1.01);
+  transition: all ease 500ms;
+}
+.message{
+   
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    height: 5%;
+    color: gray;
+    border-radius: 10px;
+    background-color: white;
+    width:86%;
+    font-family: 'Chilanka';
+    font-size: 1.25rem;
+}
+
+.imessage {
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    width:95.3%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0.5rem 1.5rem;
+  }
+  #usernameerror{
+    color: red;visibility: hidden;font-weight: bold;
+  }
+  .imessage p {
+    border-radius: 1.15rem;
+    line-height: 1.25;
+    max-width: 75%;
+    padding: 0.5rem .875rem;
+    position: relative;
+    word-wrap: break-word;
+  }
+  
+  .imessage p::before,
+  .imessage p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+  }
+  
+  p.from-me {
+    align-self: flex-end;
+    background-color: #2155CD;
+    color: #fff; 
+  }
+  
+  
+  
+  p[class^="from-"] {
+    margin: 0.5rem 0;
+    width: fit-content;
+  }
+  
+  p.from-me ~ p.from-me {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.from-me ~ p.from-me:not(:last-child) {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.from-me ~ p.from-me:last-child {
+    margin-bottom: 0.5rem;
+  }
+  
+  p.from-them {
+    align-items: flex-start;
+    background-color: #79DAE8;
+    color: #000;
+  }
+  
+  
+  
+  p[class^="from-"].emoji {
+    background: none;
+    font-size: 2.5rem;
+  }
+  
+  p[class^="from-"].emoji::before {
+    content: none;
+  }
+  
+  .no-tail::before {
+    display: none;
+  }
+  
+  .margin-b_none {
+    margin-bottom: 0 !important;
+  }
+  
+  .margin-b_one {
+    margin-bottom: 1rem !important;
+  }
+  
+  .margin-t_one {
+    margin-top: 1rem !important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #0AA1DD;
+    border-radius: 10px;
+  }
+  .fill {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: #2155CD;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  /* End of Fill Button  */
+  
+  /* Slide button styling */
+  .slide {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 30px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .slide i {
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    transition: transform 1;
+  }
+  
+  .slide div {
+    transition: transform 0.8s;
+  }
+  
+  .slide:hover div {
+    transform: translateX(-6px);
+  }
+  
+  .slide::after {
+    content: "";
+    background-color: #2155CD;
+    
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+  
+  .slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+  }
+  /* End of Slide Button  */
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+  visibility: hidden;
+  cursor:pointer;
+  display:inline-block;
+  position:absolute;
+  width: 300px;
+  top:10px;
+  z-index:1;
+}
+.hover_bkgr_fricc .helper{
+  display:inline-block;
+}
+.hover_bkgr_fricc > div {
+  background-color: #0AA1DD;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 15px 5%;
+  text-align: center;
+}
+.popupCloseButton {
+  background-color: #2155CD;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  right: 80px;
+  font-size: 15px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+}
+.popupCloseButton:hover {
+  background-color: #ccc;
+}
+.trigger_popup_fricc {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+/* Popup box BEGIN */
+/* Toggle this class - hide and show the popup */
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,40px);  /* 3 columns */
+  grid-template-rows: repeat(3,40px); /* 3 rows  */
+  grid-gap:30px 25px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+}
+
+
+.image{
+  width: 100%;
+}
+  img{
+    border-radius: 25px;
+  }
+  .namesubmit{
+    display: flex;
+    align-items: center;
+  }
+  .submit:hover{
+    background-color: #2155CD;
+  }
+  p#name{
+    top:10px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .noti{
+    background-color: lightgreen;
+  }
+ .selected{
+   color: white;
+   background-color: purple;
+ }
